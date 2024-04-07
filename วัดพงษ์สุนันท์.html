@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .no-border {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .h-content {
+            height: 30px;
+        }
+        footer {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 150px auto 150px;
+            grid-gap: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-container > * {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+        }
+        .header-container{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .nav-container {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            font-size: 16px;
+            text-align: center;
+        }
+        .article-container {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .article-container img {
+            max-width: 700px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .footer-container {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        @media screen and (max-width: 600px) {
+        .grid-container {
+            grid-template-columns: auto;
+        }
+        .nav-container {
+            grid-row: 2 / 3;
+            grid-column: 1 / 4;
+        }
+        .article-container {
+            grid-row: 3 / 4;
+            grid-column: 1 / 4;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <a class="navbar-brand" href="file:///C:/Coding/HTML/Projai/proj.html">แพร่</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="file:///C:/Coding/HTML/Projai/proj.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Blog/News</a>
+                <a class="nav-link" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid no-border">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner  ">
+              <div class="carousel-item active">
+                <img src="https://www.museumthailand.com/upload/evidence/1508213682_37125.jpg" 
+                class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.museumthailand.com/upload/evidence/1508213767_63533.jpg" 
+                class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.museumthailand.com/upload/evidence/1508213769_85031.jpg" 
+                class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+    </div>
+       
+        <div class="h-content"></div>
+        <div class="container-fluid no-border">
+            <div class="grid-container article-container">
+                <div class="header-container">
+                    วัดพงษ์สุนันท์ วัดประจำตระกูลวงศ์บุรี <br>
+                    วัดพงษ์สุนันท์เป็นวัดที่สร้างอยู่ในพื้นที่บ้านวงศ์บุรีในเขตกำแพงเมืองเก่า เดิมเป็นวัดร้างชื่อ "วัดปงสนุก" ไม่มีหลักฐานปรากฏว่าสร้างในสมัยใด  แต่พบบันทึกว่าเมื่อปี พ.ศ. 2472 ผนังวิหารได้พังทลายลงเพราะเกิดน้ำท่วม ทำสังฆกรรมไม่ได้หลายปี ในปี พ.ศ. 2472 จึงได้มีการบูรณะวัด และสร้างวิหารใหม่ โดยหลวงพงษ์พิบูลย์และเจ้าสุนันตามหายศปัญญา พระมหาโกศล อคฺคธีโรจึงได้เปลี่ยนชื่อเป็น “วัดพงษ์สุนันท์” ตามชื่อหลวงพงษ์พิบูลย์ และ เจ้าแม่สุนันตา วัดพงษ์สุนันท์ จนถึงปัจจุบัน และตั้งเป็นวัดประจำตระกูลวงศ์บุรีแต่นั้นมา <br>
+                    วัดพงษ์สุนันท์เป็นวัดที่มีสวยงาม และเอกลักษณ์ที่โดดเด่นหลายอย่างเริ่มตั้งแต่ซุ้มประตูทางเข้าที่เป็นซุ้มประตูมงคล 19  ยอด พระนอนองค์ใหญ่สีทองอร่ามอยู่กลางแจ้งริมกำแพงวัด <br>
+                    พระอุโบสถประดิษฐานพระพุทธรูปปางมารวิชัย ชื่อว่า "พระเจ้าแสนสุข" มีอายุราว 568 ปี มีเจดีย์บรรจุพระบรมสารีริกธาตุ พระพุทธรูปเก่าแก่สวยงาม วิหารแก้วองค์พระธาตุเจดีย์ 108 ยอด ที่ตั้งเด่นตระหง่าน เป็นวิหารสีขาวทั้งหลัง มีความหมายทางพุทธศาสนา คือ บูชาพระพุทธคูณ โดยวิหารหลังนี้มี พระธาตุเจดีย์ทั้งหมด 108 องค์ ซึ่งล้อมรอบด้วยกำแพงลูกแก้วทั้งหมด 108 ลูก เมื่อมองลูกแก้วสามารถเห็นวิหารแก้วองค์พระธาตุ เจดีย์ 108 ยอดกลับหัวสวยงามและน่าอัศจรรย์มาก ภายในวิหารมีพระพุทธรูปองค์ใหญ่ นามว่า "พระสุรัสวดีประทานพร"  และองค์เล็กที่ทำจากไม้ขนุนทั้งองค์ มีภาพจิตรกรรมฝาผนังเกี่ยวกับพระพุทธรูปในจังหวัดแพร่ ปีนักษัตร เป็นต้น ส่วนในองค์พระธาตุเจดีย์ บรรจุ "พระสกุลดำคูณ เป็นแสน ๆ องค์" เจดีย์พระธาตุพงษ์สุนันมงคล บรรจุพระบรมสารีริกธาตุพระบรมสารีริกธาตุ มาจากประเทศอินเดียและศรีลังกา</div>
+                <div class="nav-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.433592667806!2d100.1341873751826!3d18.143929382878092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d8c26f62b4f0f5%3A0x8b7ffb6f58e4eb08!2z4Lin4Lix4LiU4Lie4LiH4Lip4LmM4Liq4Li44LiZ4Lix4LiZ4LiX4LmM!5e0!3m2!1sth!2sth!4v1711601426350!5m2!1sth!2sth" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br>
+                    ที่ตั้ง <br>
+                    01 คำลือ ตำบลในเวียง อำเภอเมืองแพร่ แพร่ 54000 <br>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                          ที่พัก ใกล้เคียง
+                        </a>
+                      
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://th.tripadvisor.com/HotelsNear-g982710-d2723902-Wat_Phra_That_Cho_Hae-Phrae_Phrae_Province.html">tripadvisor</a>
+                          <a class="dropdown-item" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjqs9GskJaFAxWhzTwCHdmbDLAYABADGgJzZg&ase=2&gclid=CjwKCAjwh4-wBhB3EiwAeJsppBXohft9aXCn1ycu6_2FG7UI9uf81QozVjcZ3v3W2XfZZ--rtrySxBoCzckQAvD_BwE&ohost=www.google.com&cid=CAESVuD2Pqj0n0coFExvlVEufz-f5A28tsNUpM85EMpMHrSzghUzcd_FvWM1NWRNQrR6P_sQB-aJLTfGWpSMqkKT1fzaslfE8DBcqedexrr4snsvpHaH3HkM&sig=AOD64_2ri8c0-OxPWfg_bzpbVgtylIqvSg&q&nis=4&adurl&ved=2ahUKEwiruMuskJaFAxVGR2wGHVc4D-wQ0Qx6BAgIEAE">agoda</a>
+                          <a class="dropdown-item" href="https://th.trip.com/hot/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%98%E0%B8%B2%E0%B8%95%E0%B8%B8%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%AE+%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%81%E0%B8%A3%E0%B8%A1%E0%B9%83%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B9%80%E0%B8%84%E0%B8%B5%E0%B8%A2%E0%B8%87/">trip</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                <div class="article-container">
+                    กิจกรรมที่ยอดนิยม <br>
+                    ไหว่สักการะ พระเจ้าทันใจ ท่าประทับยืนชี้นิ้ว และประเพณีงานสรงน้ำพระบรมสารีริกธาตุ งานไหว้สาพระธาตุพงษ์สุนันท์มงคล
+                    <img src="https://mpics.mgronline.com/pics/Images/558000004541502.JPEG" alt=""><br>
+                    วัดพงษ์สุนันท์ มีการจัดประเพณีงานสรงน้ำพระบรมสารีริกธาตุ งานไหว้สาพระธาตุพงษ์สุนันท์มงคล เป็นประจำทุกปีในช่วงเดือนกุมภาพันธ์
+                </div> 
+                <div class="footer-container">
+                    วันเวลาทำการ <br>
+                    เปิดทุกวันไม่มีวันหยุด <br>
+                    เวลา : 08:00 น. -17:00 น.
+            </div>  
+            </div>
+        </div>
+    
+      <footer class="bg-dark">
+        <div class="container text-white">
+            copyright
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

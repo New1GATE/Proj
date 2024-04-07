@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .no-border {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .h-content {
+            height: 30px;
+        }
+        footer {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 150px auto 150px;
+            grid-gap: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-container > * {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+        }
+        .header-container{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .nav-container {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            font-size: 16px;
+            text-align: center;
+        }
+        .article-container {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .article-container img {
+            max-width: 700px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .footer-container {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        @media screen and (max-width: 600px) {
+        .grid-container {
+            grid-template-columns: auto;
+        }
+        .nav-container {
+            grid-row: 2 / 3;
+            grid-column: 1 / 4;
+        }
+        .article-container {
+            grid-row: 3 / 4;
+            grid-column: 1 / 4;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <a class="navbar-brand" href="file:///C:/Coding/HTML/Projai/proj.html">แพร่</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="file:///C:/Coding/HTML/Projai/proj.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Blog/News</a>
+                <a class="nav-link" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid no-border">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner  ">
+              <div class="carousel-item active">
+                <img src="https://cms.dmpcdn.com/travel/2023/01/20/631f5c50-9862-11ed-9f7e-d9b2b6931699_webp_original.jpg" 
+                class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cms.dmpcdn.com/travel/2023/01/20/62d77de0-9862-11ed-b0e6-2dfee22358a1_webp_original.jpg" 
+                class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cms.dmpcdn.com/travel/2023/01/20/61975cc0-9862-11ed-aa28-ab4fc29dddf2_webp_original.jpg" 
+                class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+    </div>
+       
+        <div class="h-content"></div>
+        <div class="container-fluid no-border">
+            <div class="grid-container article-container">
+                <div class="header-container">
+                    อุทยานแห่งชาติแม่ยม<br>
+                    ครอบคลุมพื้นที่อำเภอสอง จังหวัดแพร่ อำเภองาว จังหวัดลำปาง อำเภอเชียงม่วน จังหวัดพะเยา และอำเภอบ้านหลวง จังหวัดน่าน ลักษณะภูมิประเทศเป็นเทือกเขาสูงสองฝั่งแม่น้ำยม พื้นที่ส่วนใหญ่เป็นป่าเบญจพรรณ <br>
+                    สถานที่ที่น่าสนใจภายในอุทยานฯ ได้แก่ - แก่งเสือเต้น อยู่หน้าที่ทำการอุทยานฯ เป็นแก่งหินที่มีแม่น้ำยมไหลผ่านเป็นระยะทาง 2 กิโลเมตร ชื่อ “แก่งเสือเต้น” มาจากรอยเท้าเสือที่ปรากฏอยู่บนก้อนหินบนแก่ง บริเวณแก่งเสือเต้นมีหาดทรายที่เหมาะแก่การนำเต็นท์มากางพักแรมเพื่อสัมผัสกับธรรมชาติที่สวยงาม 
+                    ดงสักงาม ห่างจากที่ทำการอุทยานฯ 25 กิโลเมตร เป็นพื้นที่ที่มีไม้สักทองขนาดใหญ่ขึ้นอยู่อย่างหนาแน่นตลอดแนวริมฝั่งแม่น้ำยม ได้รับการจัดพื้นที่ให้เป็นเขตป่าสงวนแห่งชาติแม่ปุง-แม่เป้า นับเป็นผืนป่าสักที่ใหญ่ที่สุดในประเทศไทย ระหว่างเดือนสิงหาคม-กันยายน จะมีดอกสักสีเหลืองอร่ามบานอยู่ทั่วบริเวณ - จุดชมวิวทะเลหมอก 
+                    อยู่ห่างจากที่ทำการอุทยานฯ 14 กิโลเมตร เป็นจุดชมทิวเขาอันสลับซับซ้อน และชมดงป่าสักงามทางทิศตะวันออก ในฤดูหนาวจะได้สัมผัสบรรยากาศที่หนาวเย็น พร้อมชมทะเลหมอกในยามเช้า - หล่มด้ง เป็นแอ่งน้ำธรรมชาติขนาดเส้นผ่าศูนย์กลาง 100 เมตร อยู่บนยอดเขาสูงในเขตป่าสงวนแห่งชาติแม่ปุง-แม่เป้า 
+                    ห่างจากที่ทำการอุทยานฯ 15 กิโลเมตร เป็นแหล่งน้ำสำคัญสำหรับสัตว์ป่าน้อยใหญ่ ลักษณะที่แปลก คือ มีน้ำขังตลอดปี แม้ไม่มีต้นกำเนิดของแหล่งน้ำ แต่ปริมาณน้ำในแอ่งก็ไม่เคยเพิ่มหรือลดลง และบริเวณใกล้เคียงกันมีดงต้นตะแบกเป็นลานสำหรับกางเต็นท์ มีจุดชมทิวทัศน์ป่าสักสำหรับชมพระอาทิตย์ขึ้นในยามเช้าและค่อย ๆ ลับขอบฟ้าในยามเย็น
+                 </div>
+                <div class="nav-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945.2841302256961!2d100.15584044667443!3d18.61292828253857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d85d07457014f3%3A0x35266ebe3e7f51e!2z4Lit4Li44LiX4Lii4Liy4LiZ4LmB4Lir4LmI4LiH4LiK4Liy4LiV4Li04LmB4Lih4LmI4Lii4Lih!5e0!3m2!1sth!2sth!4v1711786931297!5m2!1sth!2sth" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    ที่ตั้ง <br>
+                    ตำบลสะเอียบ อำเภอสอง จังหวัดแพร่ <br>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                          ที่พัก ใกล้เคียง
+                        </a>
+                      
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://th.tripadvisor.com/HotelsNear-g2237351-d4322587-Mae_Yom_National_Park-Song_Phrae_Province.html">tripadvisor</a>
+                          <a class="dropdown-item" href="https://th.trip.com/hotels/list?city=106424&cityName=%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%20%E0%B8%AB%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%AD%E0%B9%89%E0%B8%AD&provinceId=11153&countryId=4&districtId=0&checkin=2024%2F03%2F30&checkout=2024%2F03%2F31&barCurr=THB&searchType=LM&searchWord=%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%96%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%81%E0%B8%A1%E0%B8%A5%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93&searchValue=131%7C0_131_18.090956%7C99.845878%7C%E0%B8%9E%E0%B8%B4%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%A0%E0%B8%B1%E0%B8%93%E0%B8%91%E0%B9%8C%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%96%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B9%82%E0%B8%81%E0%B8%A1%E0%B8%A5%E0%B8%9C%E0%B9%89%E0%B8%B2%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93%7C0_1&searchCoordinate=3_0_0_0%7C2_0_0_0%7C1_18.090956_99.845878_0%7CNORMAL_18.090956_99.845878_0&crn=1&adult=2&children=0&searchBoxArg=t&travelPurpose=0&ctm_ref=ix_sb_dl&domestic=true&listFilters=17%7C1*17*1*2%2C80%7C0%7C1*80*0*2%2C29%7C1*29*1%7C2*2&locale=th-TH&curr=THB">trip</a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                <div class="article-container">
+                    กิจกรรมที่ยอดนิยม <br>
+                    การเดินชมศึกษาธรรมชาติและพักผ่อน<br>
+                    <img src="https://cms.dmpcdn.com/travel/2023/01/20/61975cc0-9862-11ed-aa28-ab4fc29dddf2_webp_original.jpg" alt=""><br>
+                    การเดินศึกษาธรรมชาติ, เดินป่า, เที่ยวน้ำตก, เที่ยวถ้ำหรือศึกษาสภาพธรณี, ชมพรรณไม้, ดูนกหรือผีเสื้อ, ส่องสัตว์, ดูดาว, ปั่นจักรยานหรือจักรยานเสือภูเขา, <br>
+                    พายเรือหรือแคนูหรือคายัค, ล่องแก่ง, ชมประวัติศาสตร์หรือวัฒนธรรม, และการตั้งแคมป์พักแรม เป็นกิจกรรมที่เป็นที่นิยมในพื้นที่นี้ เพื่อให้ผู้ท่องเที่ยวได้สัมผัสกับธรรมชาติและวิถีชีวิตของพื้นที่นี้อย่างใกล้ชิดและสนุกสนาน
+                </div> 
+                <div class="footer-container">
+                    วันเวลาทำการ <br>
+                    เปิดทุกวันไม่มีวันหยุด <br>
+                    เวลา : 08.00 น.- 15.00 น.
+            </div>  
+            </div>
+        </div>
+    
+      <footer class="bg-dark">
+        <div class="container text-white">
+            copyright
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
